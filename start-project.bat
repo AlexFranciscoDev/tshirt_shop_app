@@ -6,3 +6,5 @@ start cmd.exe /k "cd C:\Users\Alex\Documents\Backend_projects\tshirts_shop_app &
 start C:\Users\Alex\AppData\Local\MongoDBCompass\MongoDBCompass.exe
 :: Open Postman
 start C:\Users\Alex\AppData\Local\Postman\Postman.exe
+:: Open Visual
+start Code
