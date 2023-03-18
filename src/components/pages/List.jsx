@@ -1,8 +1,10 @@
 import React from 'react'
 import { Global } from '../../helpers/Global';
 import { Petition } from '../../helpers/Petition';
+import { useNavigate } from 'react-router-dom';
 
 export const List = ({ tshirts, setTshirts }) => {
+    const navigate = useNavigate();
 
     const deleteTshirt = (id) => {
         console.log(id);
@@ -29,6 +31,9 @@ export const List = ({ tshirts, setTshirts }) => {
                             <button className="delete" onClick={() => {
                                 deleteTshirt(tshirt._id)
                             }}>Borrar</button>
+                            <button className="edit" onClick={() => {
+                                navigate('/edit/' + tshirt._id);
+                            }}>Editar</button>
                         </div>
                     </div>
                 )

@@ -29,7 +29,6 @@ export const Petition = async (url, fetch_method, data_save = '', files = false)
   // Doing the petition
   let response = await fetch(url, options);
   data = await response.json();
-  console.log(data);
   return (
     data
   )
